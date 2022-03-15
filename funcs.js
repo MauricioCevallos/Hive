@@ -7,4 +7,5 @@
         
         var opening = "Awaken work bee # "+ num + "...";
         document.getElementById("bee_num").innerHTML = opening;
+        return num;
     }

@@ -9,13 +9,23 @@
 </head>
 <body>
     <p id="t_day"> </p>
-    <p>So you feed thousands of little larvae all day</p>
+    <p id="bee_num"> </p>
     <a href="new_day.html">Get some rest</a>
     <script>
+        c = sessionStorage.getItem("count");
+        c = parseInt(c);
         d = sessionStorage.getItem("day");
+        if (c == 0){
+        d = parseInt(d) + 1;
+        sessionStorage.setItem("day", d);
+        }
+        c = c + 1;
+        sessionStorage.setItem("count", c);
         day = "Day: " + d;
         document.getElementById("t_day").innerHTML = day;
-        sessionStorage.setItem("count",0);
+        b = sessionStorage.getItem("bee_num");
+        bee_num = "Wake up bee # " + b; 
+        document.getElementById("bee_num").innerHTML = bee_num; 
     </script>
 </body>
 </html>

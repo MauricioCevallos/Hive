@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hive</title>
     <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body>
+    <p id="t_day"> </p>
     <p class="in-head";>There are guards watching you closely...</p>
     <a href="get_to_work.html">Get to work</a>
+    <script>
+        d = sessionStorage.getItem("day");
+        day = "Day: " + d;
+        document.getElementById("t_day").innerHTML = day;
+    </script>
 </body>
 </html>
