@@ -11,6 +11,7 @@
   After the 20th day, a worker leaves the hive and spends the remainder of its life as a forager.
 - forager (dangerous), predators, losing hive
 - Respect for the queen
+- make friends with other bees to overthrow monarch
 
 (Fact) - Except for the queen, all of a colony's workers are replaced about every four months.
-(Fact) Queen lives 3- 5 years some until 8.
+(Fact) Queen lives 3-5 years some until 8.

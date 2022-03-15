@@ -35,3 +35,11 @@ a {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.t_day{
+    text-align:center;
+    display:block;
+    margin-bottom: 2%;
+    color: rgb(245, 232, 174);
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

@@ -9,18 +9,18 @@
     <script src="funcs.js"></script>
 </head>
 <body>
-    <p id="bee_num"; > </p>
+    <p id="t_day"> </p>
+    <p id="bee_num"> </p>
     <a href="pages\what_is_this.html">What is this?</a> 
     
     <a href="pages\get_to_work.html">Get to work</a>
+    <script type="text/javascript">
+        let day = "Day: 1"
+        document.getElementById("t_day").innerHTML = day;
+        b = bee_generator();
+        
+        sessionStorage.setItem("day", 1);
+        sessionStorage.setItem("bee_num", b);
+      </script>
 </body>
 </html>
-<script>
-bee_generator();
-
-    function bee_generator(){
-        let num = Math.floor(Math.random() * 10000);
-        var opening = "Awaken work bee # "+ num + "...";
-        document.getElementById("bee_num").innerHTML = opening;
-    }
-</script>
