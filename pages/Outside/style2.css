@@ -35,6 +35,24 @@ a {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.froggy{
+    background-color: white;
+    background-image: url("img/frog.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 30%; 
+    /* background-position: 0% -50%; */
+}
+
+.wolf{
+    background-color: white;
+    background-image: url("img/wolf.JPG");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 40%; 
+    /* background-position: 0% -50%; */
+}
+
 .in-head{
     text-align: center;
     font-style: italic;
