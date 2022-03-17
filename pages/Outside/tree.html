@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hive</title>
+    <link rel="stylesheet" type="text/css" href="style3.css">
+</head>
+<body class>
+    <p id="t_day"> </p>
+    <p class="in-head";>You climb inside the tree and find yourself sleepy. Before you know it, you doze off...</p>
+    <a href="tree_wake.html">Wake up.</a>
+    <script>
+        d = sessionStorage.getItem("day");
+        day = "Day: " + d;
+        document.getElementById("t_day").innerHTML = day;
+        
+        c=sessionStorage.getItem("count");
+        if (c < 1){
+            d = parseInt(d) + 1;
+            sessionStorage.setItem("day", d);
+        }
+        c = parseInt(c) + 1;
+        sessionStorage.setItem("count", c);
+    </script>
+</body>
+</html>

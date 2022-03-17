@@ -5,19 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hive</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
-<body>
+<body class>
     <p id="t_day"> </p>
-    <p id="bee_num"> </p>
-    <a href="get_to_work2.html">Get to work.</a>
+    <p id="bee_num"></p>
+    <a href="../../index.html">Rest</a>
     <script>
         d = sessionStorage.getItem("day");
         day = "Day: " + d;
         document.getElementById("t_day").innerHTML = day;
         b = sessionStorage.getItem("bee_num");
-        bee_num = "Awaken bee # " + b + ".";
-        document.getElementById("bee_num").innerHTML = bee_num;
+        p_text = "Congratulations forger bee #" + b +" today is your retirement day! You have done so well and have made the Queen proud. Our hive will prosper because of your contributions. Now rest. You deserve this.";
+        document.getElementById("bee_num").innerHTML = p_text;
+
     </script>
 </body>
 </html>

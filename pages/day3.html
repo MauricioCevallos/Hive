@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hive</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <p id="t_day"> </p>
+    <p id="bee_num"> </p>
+    <a id="work" href="get_to_work3.html">Get to work</a>
+    <script>
+        c = sessionStorage.getItem("count");
+        c = parseInt(c);
+        d = sessionStorage.getItem("day");
+        if (c == 0){ // has the page been reloaded? 
+        d = parseInt(d) + 1;
+        sessionStorage.setItem("day", d);
+        }
+        if(d > 16 & d < 21){
+            document.getElementById("work").href = "get_to_work3_1.html";
+        }
+        if (d >= 21){
+            document.getElementById("work").href = "get_to_work4.html";
+        }
+        c = c + 1;
+        sessionStorage.setItem("count", c);
+        day = "Day: " + d;
+        document.getElementById("t_day").innerHTML = day;
+        b = sessionStorage.getItem("bee_num");
+        bee_num = "Wake up bee # " + b +"."; 
+        document.getElementById("bee_num").innerHTML = bee_num; 
+    </script>
+</body>
+</html>

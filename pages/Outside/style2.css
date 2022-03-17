@@ -1,0 +1,57 @@
+body{
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    /* background-position: 0% -50%; */
+
+}
+
+.g_b{
+    background-color: white;
+    background-image: url("g_bee.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 30%; 
+    /* background-position: 0% -50%; */
+}
+
+p{
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    color: rgb(51, 28, 179);
+    background-color: white;
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+    text-align:center;
+    display:block;
+    margin-bottom: 2%;
+    color: rgb(51, 28, 179);
+    background-color: white;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.in-head{
+    text-align: center;
+    font-style: italic;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    color: rgb(51, 28, 179);
+    background-color: white;
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.t_day{
+    text-align:center;
+    display:block;
+    margin-bottom: 2%;
+    color: rgb(51, 28, 179);
+    background-color: white;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hive</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body class>
+    <p id="t_day"> </p>
+    <p id="bee_num"></p>
+    <a id="retire"; href="rest.html">Get rest.</a>
+    <script>
+        d = sessionStorage.getItem("day");
+        day = "Day: " + d;
+        document.getElementById("t_day").innerHTML = day;
+        b = sessionStorage.getItem("bee_num");
+        p_text = "Good job bee #" + b;
+        document.getElementById("bee_num").innerHTML = p_text;
+        c = sessionStorage.getItem("count");
+        if (c < 1){
+            d = parseInt(d);
+            d = d + 1;
+            sessionStorage.setItem("day", d);
+        }
+        c = parseInt(c) + 1;
+        sessionStorage.setItem("count", c);
+        if (d >= 30){
+            document.getElementById("retire").href = "retirement_day.html";
+        }
+
+    </script>
+</body>
+</html>

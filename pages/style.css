@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+    background-image: url("../honeycomb2.png");
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    /* background-position: 0% -50%; */
+
+}
+
+p{
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    color: rgb(245, 232, 174);
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+    text-align:center;
+    display:block;
+    margin-bottom: 2%;
+    color: rgb(245, 232, 174);
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.in-head{
+    text-align: center;
+    font-style: italic;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    color: rgb(245, 232, 174);
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.t_day{
+    text-align:center;
+    display:block;
+    margin-bottom: 2%;
+    color: rgb(245, 232, 174);
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
