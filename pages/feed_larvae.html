@@ -9,13 +9,17 @@
 </head>
 <body>
     <p id="t_day"> </p>
-    <p>So you feed thousands of little larvae all day</p>
-    <a href="new_day.html">Get some rest</a>
+    <p class="in-head">So you feed thousands of little larvae all day.</p>
+    <a href="new_day.html"; id="link">Get some rest</a>
     <script>
         d = sessionStorage.getItem("day");
+        d = parseInt(d);
+        if (d >= 10){
+            document.getElementById("link").href = "day2.html";
+        }
         day = "Day: " + d;
         document.getElementById("t_day").innerHTML = day;
-        sessionStorage.setItem("count",0);
+        sessionStorage.setItem("count",0); // used to not add up days on reload. Only add up day on first reload on next page.
     </script>
 </body>
 </html>
